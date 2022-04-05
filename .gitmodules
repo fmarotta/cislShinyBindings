@@ -1,0 +1,3 @@
+[submodule "inst/vendor/circularSlider"]
+	path = inst/vendor/circularSlider
+	url = https://github.com/fmarotta/circularSlider

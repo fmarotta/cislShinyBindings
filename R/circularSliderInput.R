@@ -1,3 +1,6 @@
+#' circularSliderInput
+#'
+#' @export
 circularSliderInput <- function(inputId, label, value) {
     addResourcePath(
         prefix = "wwwCircularSlider",

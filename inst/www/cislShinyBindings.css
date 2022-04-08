@@ -1,0 +1,163 @@
+.cisl--style.cisl-tick-minor {
+    height: 4px;
+    width: 1px;
+    fill: #999999;
+}
+.cisl--style.cisl-tick-major {
+    height: 8px;
+    width: 1px;
+    fill: #000;
+}
+.cisl--style.cisl-label {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-shadow: none;
+    padding: 1px 3px;
+    background-color: #428bca;
+    border-style: none;
+    border-radius: 3px;
+    font-size: 11px;
+    line-height: 1.333;
+}
+.cisl--style.cisl-break-major {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 9px;
+    color: #fff;
+}
+.cisl--style.cisl-rails-border {
+    stroke-width: 10px;
+    stroke: #cccccc;
+}
+.cisl--style.cisl-rails {
+    stroke-width: 8px;
+    stroke: url("#cisl-shiny-gradient");
+    background-color: #ededed;
+}
+.cisl--style.cisl-bar {
+    stroke-width: 10px;
+    stroke: #428bca;
+}
+.cisl--style.cisl-handle {
+    rx: 22px;
+    height: 22px;
+    width: 22px;
+    stroke-width: 1px;
+    stroke: #ababab;
+    fill: #dedede;
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3);
+    border-radius: 22px;
+}
+.cisl--style.cisl-handle:hover {
+    background: #fff;
+}
+
+
+
+
+.irs {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.irs--shiny {
+  height: 40px;
+}
+
+.irs--shiny.irs-with-grid {
+  height: 60px;
+}
+
+.irs--shiny .irs-line {
+  top: 25px;
+  height: 8px;
+  background: linear-gradient(to bottom, #dedede -50%, #fff 150%);
+  background-color: #ededed;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+}
+
+.irs--shiny .irs-bar {
+  top: 25px;
+  height: 8px;
+  border-top: 1px solid #428bca;
+  border-bottom: 1px solid #428bca;
+  background: #428bca;
+}
+
+.irs--shiny .irs-bar--single {
+  border-radius: 8px 0 0 8px;
+}
+
+.irs--shiny .irs-shadow {
+  top: 38px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.irs--shiny .lt-ie9 .irs-shadow {
+  filter: alpha(opacity=30);
+}
+
+.irs--shiny .irs-handle {
+  top: 17px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #ababab;
+  background-color: #dedede;
+  box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3);
+  border-radius: 22px;
+}
+
+.irs--shiny .irs-handle.state_hover, .irs--shiny .irs-handle:hover {
+  background: #fff;
+}
+
+.irs--shiny .irs-min,
+.irs--shiny .irs-max {
+  top: 0;
+  padding: 1px 3px;
+  text-shadow: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  font-size: 10px;
+  line-height: 1.333;
+}
+
+.irs--shiny .lt-ie9 .irs-min,
+.irs--shiny .lt-ie9 .irs-max {
+  background: #cccccc;
+}
+
+.irs--shiny .irs-from,
+.irs--shiny .irs-to,
+.irs--shiny .irs-single {
+  color: #fff;
+  text-shadow: none;
+  padding: 1px 3px;
+  background-color: #428bca;
+  border-radius: 3px;
+  font-size: 11px;
+  line-height: 1.333;
+}
+
+.irs--shiny .lt-ie9 .irs-from,
+.irs--shiny .lt-ie9 .irs-to,
+.irs--shiny .lt-ie9 .irs-single {
+  background: #999999;
+}
+
+.irs--shiny .irs-grid {
+  height: 27px;
+}
+
+.irs--shiny .irs-grid-pol {
+  background-color: #000;
+}
+
+.irs--shiny .irs-grid-text {
+  bottom: 5px;
+}
+
+.irs--shiny .irs-grid-pol.small {
+  background-color: #999999;
+}

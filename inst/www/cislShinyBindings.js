@@ -1,7 +1,6 @@
-var cislBinding = new Shiny.InputBinding();
+var shinyCislBinding = new Shiny.InputBinding();
 
-
-$.extend(cislBinding, {
+$.extend(shinyCislBinding, {
   find: function(scope) {
     return $(scope).find(".CircularSlider");
   },
@@ -10,22 +9,28 @@ $.extend(cislBinding, {
     $(el).data("circularSlider").$input.after(
         '<svg width="0" height="0">' +
         '<defs>' +
-            '<radialGradient id="cisl-shiny-gradient" r="53%">' +
+            '<radialGradient id="cisl-shiny-gradient" r="52%">' +
                 '<stop offset="90%" stop-color="#fff" />' +
                 '<stop offset="110%" stop-color="#dedede" />' +
             '</radialGradient>' +
             '</defs>' +
         '</svg>'
-    )
+    );
   },
   getValue: function(el) {
     return $(el).data("circularSlider").get_value_array();
   },
+  setValue: function(el, value) {
+    $(el).data("circularSlider").update_slider_value(value[0], value[1]);
+  },
   subscribe: function(el, callback) {
-      $(el).data("circularSlider").onFinish = function() {
-          callback(true);
-      }
+    $(el).data("circularSlider").onFinish = function() {
+      callback();
+    }
+  },
+  unsubscribe: function(el) {
+    $(el).data("circularSlider").onFinish = null;
   }
 });
 
-Shiny.inputBindings.register(cislBinding);
+Shiny.inputBindings.register(shinyCislBinding);

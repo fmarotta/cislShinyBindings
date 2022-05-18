@@ -1,7 +1,7 @@
 Package: cislShinyBindings
 Type: Package
 Title: Shiny Bindings for CircularSlider
-Version: 0.1.0
+Version: 0.2.0
 Date: 2022-04-05
 Author: person("Federico", "Marotta", , "federico.marotta96@gmail.com", c("aut", "cre"))
 Maintainer: Federico Marotta <federico.marotta96@gmail.com>
@@ -12,4 +12,4 @@ LazyData: TRUE
 Imports:
   shiny
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.0

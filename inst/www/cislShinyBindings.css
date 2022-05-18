@@ -1,7 +1,8 @@
 .cisl-container {
-    max-width: 350px;
+    max-width: 450px;
     max-height: 450px;
-    margin-right: 100vw;
+    margin: auto;
+    display: block;
 }
 .cisl--style.cisl-tick-minor {
     height: 4px;

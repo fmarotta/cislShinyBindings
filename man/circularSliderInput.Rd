@@ -4,7 +4,23 @@
 \alias{circularSliderInput}
 \title{circularSliderInput}
 \usage{
-circularSliderInput(inputId, label, value)
+circularSliderInput(
+  inputId,
+  label,
+  min,
+  max,
+  value,
+  step = NULL,
+  breaks_n = 100,
+  major_breaks_every = 10,
+  ruler_inside = TRUE,
+  breaks_altitude = 23,
+  labels_altitude = 11,
+  digits = 2,
+  prefix = NULL,
+  postfix = NULL,
+  values_sep = ":"
+)
 }
 \description{
 circularSliderInput

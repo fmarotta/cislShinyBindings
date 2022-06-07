@@ -36,7 +36,6 @@ $.extend(shinyCislBinding, {
 Shiny.inputBindings.register(shinyCislBinding);
 
 Shiny.addCustomMessageHandler("updateCisl", function(m) {
-  var el = "#" + m.id;
-  var value = m.value;
-  $(el).data("circularSlider").update_slider_value(value[0], value[1]);
+  $("#" + m.id).data("circularSlider").update_slider_value(m.value[0], m.value[1]);
+  Shiny.setInputValue(m.id, m.value);
 });
